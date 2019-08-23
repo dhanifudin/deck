@@ -1,9 +1,8 @@
 // Import React
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 // Import Spectacle Core tags
-import { Deck, Heading, ListItem, List, Slide } from 'spectacle'
+import { Deck, Heading, Slide } from 'spectacle'
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default'
