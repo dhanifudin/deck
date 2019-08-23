@@ -1,12 +1,11 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'
 import Redbox from 'redbox-react'
 
-import Presentation from './presentation'
-import Programming from './2019/programming'
+import App from './App'
 
 const CustomErrorReporter = ({ error }) => <Redbox error={error} />
 
@@ -17,8 +16,7 @@ CustomErrorReporter.propTypes = {
 ReactDOM.render(
   <AppContainer errorReporter={CustomErrorReporter}>
     <Router>
-      <Route path="/" component={Presentation} />
-      <Route path="/2019/programming" component={Programming} />
+      <App />
     </Router>
   </AppContainer>,
   document.getElementById('root')
