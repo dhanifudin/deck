@@ -1,32 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import Redbox from 'redbox-react';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { AppContainer } from 'react-hot-loader'
+import Redbox from 'redbox-react'
 
-import Presentation from './presentation';
+import Presentation from './presentation'
+import Programming from './2019/programming'
 
-const CustomErrorReporter = ({ error }) => <Redbox error={error} />;
+const CustomErrorReporter = ({ error }) => <Redbox error={error} />
 
 CustomErrorReporter.propTypes = {
   error: PropTypes.instanceOf(Error).isRequired,
-};
+}
 
 ReactDOM.render(
   <AppContainer errorReporter={CustomErrorReporter}>
-    <Presentation />
+    <Router>
+      <Route path="/" component={Presentation} />
+      <Route path="/2019/programming" component={Programming} />
+    </Router>
   </AppContainer>,
   document.getElementById('root')
-);
-
-if (module.hot) {
-  module.hot.accept('./presentation', () => {
-    const NextPresentation = require('./presentation').default;
-    ReactDOM.render(
-      <AppContainer errorReporter={CustomErrorReporter}>
-        <NextPresentation />
-      </AppContainer>,
-      document.getElementById('root')
-    );
-  });
-}
+)
