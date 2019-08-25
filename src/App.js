@@ -1,6 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import './App.css'
+
 import Presentation from './Presentation'
 import Programming from './2019/programming/Programming.js'
 import Programming00 from './2019/programming/Programming00.js'

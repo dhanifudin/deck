@@ -32,14 +32,14 @@ const Programming = () => {
   return (
     <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
       <Slide transition={['zoom']} bgColor={'primary'}>
-        <Heading size={1} caps lineHeight={1} textColor="secondary">
+        <Heading size={1} caps fit lineHeight={1} textColor="secondary">
           Dasar Pemrograman
         </Heading>
       </Slide>
       {slides.map((slide, key) => {
         return (
           <Slide key={key} transition={['zoom']} bgColor={'primary'}>
-            <Heading size={1} caps lineHeight={1} textColor="secondary">
+            <Heading size={1} caps fit lineHeight={1} textColor="secondary">
               <Link to={slide.link}>{slide.title}</Link>
             </Heading>
           </Slide>

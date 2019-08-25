@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Import Spectacle Core tags
-import { Deck, Heading, ListItem, List, Slide } from 'spectacle'
+import { Deck, Slide, Heading, List, ListItem } from 'spectacle'
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default'
@@ -16,7 +16,7 @@ const theme = createTheme(
     primary: 'white',
     secondary: '#1F2022',
     tertiary: '#03A9FC',
-    quaternary: '#CECECE',
+    quaternary: '#282828',
   },
   {
     primary: 'Montserrat',
@@ -28,10 +28,10 @@ const Presentation = () => {
   return (
     <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
       <Slide transition={['zoom']} bgColor={'primary'}>
-        <Heading size={1} caps lineHeight={1} textColor="secondary">
+        <Heading size={1} caps fit lineHeight={1} textColor="secondary">
           Kuliah Semester
         </Heading>
-        <Heading size={2} caps lineHeight={1} textColor="secondary">
+        <Heading size={2} caps fit lineHeight={1} textColor="secondary">
           Gasal 2019 / 2020
         </Heading>
         <List>
