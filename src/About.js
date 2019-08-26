@@ -37,7 +37,7 @@ const About = () => {
   const about = `
   {
     "name": "Dian Hanifudin Subhi",
-    "email": "dhanifudin@gmail.com",
+    "email": "dhanifudin@polinema.ac.id",
     "phone": "082230743546"
   }
   `
