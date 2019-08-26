@@ -52,6 +52,17 @@ const About = () => {
           output={[<Typist cursor={cursor}>cat about.json</Typist>, about]}
         />
       </Slide>
+      <Slide transition={['zoom']} bgColor={'primary'}>
+        <iframe
+          title="Why Algorithms called algorithms"
+          width="600"
+          height="400"
+          src="https://www.youtube.com/embed/oRkNaF0QvnI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </Slide>
     </Deck>
   )
 }

@@ -7,6 +7,7 @@ import Presentation from './Presentation'
 import About from './About'
 import Programming from './2019/programming/Programming.js'
 import Programming00 from './2019/programming/Programming00.js'
+import Programming01 from './2019/programming/Programming01.js'
 
 const App = () => {
   const routes = [
@@ -14,6 +15,7 @@ const App = () => {
     { path: '/about', component: About },
     { path: '/2019/programming', component: Programming },
     { path: '/2019/programming/00', component: Programming00 },
+    { path: '/2019/programming/01', component: Programming01 },
   ]
   return (
     <Switch>
