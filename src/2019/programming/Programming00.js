@@ -52,7 +52,7 @@ const Programming00 = () => {
           <TableBody>
             <TableRow>
               <TableItem>1</TableItem>
-              <TableItem>Dasar Pemrograman</TableItem>
+              <TableItem>Algoritma</TableItem>
             </TableRow>
             <TableRow>
               <TableItem>2</TableItem>
@@ -60,7 +60,7 @@ const Programming00 = () => {
             </TableRow>
             <TableRow>
               <TableItem>3</TableItem>
-              <TableItem>Tipe data, Variabel, Input-Output, Sequence</TableItem>
+              <TableItem>Sintaks Bahasa Pemrograman</TableItem>
             </TableRow>
             <TableRow>
               <TableItem>4</TableItem>
