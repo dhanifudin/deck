@@ -1,0 +1,1 @@
+{"version":3,"sources":["/home/travis/build/dhanifudin/deck/src/App.css","main.6ae52ec6.chunk.css"],"names":[],"mappings":"AAAA,iBACE,wBCCF","file":"main.6ae52ec6.chunk.css","sourcesContent":["tr:nth-child(even) {\n  background-color: #f2f2f2;\n}\n","tr:nth-child(even) {\n  background-color: #f2f2f2;\n}\n\n"]}
